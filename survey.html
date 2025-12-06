@@ -1,0 +1,77 @@
+<!-- survey.html (Eco Action Survey Form Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Action Survey - EcoLife</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Sustainability</a></li>
+                <li><a href="tips.html">Eco-Friendly Tips</a></li>
+                <li><a href="recycling.html">Recycling Guide</a></li>
+                <li><a href="survey.html">Eco Action Survey</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <img src="https://via.placeholder.com/1200x200/00FF00/FFFFFF?text=Take+Action+Survey" alt="Survey Banner">
+        </div>
+    </header>
+
+    <main>
+        <section id="survey-section">
+            <h1>Eco Action Survey</h1>
+            <p>Tell us about your eco-habits! Your input helps us improve.</p>
+
+            <form class="survey-form" action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>How often do you recycle?</legend>
+                    <input type="radio" id="daily" name="recycle" value="daily">
+                    <label for="daily">Daily</label>
+                    <input type="radio" id="weekly" name="recycle" value="weekly">
+                    <label for="weekly">Weekly</label>
+                    <input type="radio" id="rarely" name="recycle" value="rarely">
+                    <label for="rarely">Rarely</label>
+                </fieldset>
+
+                <label>Actions you've taken:</label>
+                <input type="checkbox" id="compost" name="actions" value="compost">
+                <label for="compost">Composting</label><br>
+                <input type="checkbox" id="reduce" name="actions" value="reduce">
+                <label for="reduce">Reducing plastic use</label><br>
+                <input type="checkbox" id="plant" name="actions" value="plant">
+                <label for="plant">Planting trees</label>
+
+                <label for="priority">Top eco-priority:</label>
+                <select id="priority" name="priority" required>
+                    <option value="">Select one</option>
+                    <option value="climate">Climate Change</option>
+                    <option value="waste">Waste Reduction</option>
+                    <option value="energy">Energy Conservation</option>
+                </select>
+
+                <label for="feedback">Additional Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Share your thoughts..."></textarea>
+
+                <button type="submit" class="submit-btn">Submit Survey</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EcoLife. All rights reserved. | Promoting a greener tomorrow.</p>
+    </footer>
+</body>
+</html>
